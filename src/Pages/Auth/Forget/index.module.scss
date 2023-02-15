@@ -1,0 +1,63 @@
+.formBox{
+  color: #fff;
+
+  h1{
+    font-size: 40px;
+    color: #fff;
+    margin: 0 0 16px;
+  }
+
+  .form-control{
+    height: 50px;
+    border-radius: 10px;
+    line-height: 48px;
+    padding: 0 20px;
+  }
+
+  a{
+    color: #EEEEF3;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: underline;
+      color: #EEEEF3;
+    }
+  }
+}
+
+.divider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 30px 0;
+
+  span{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+
+    &:before,
+    &:after{
+      position: absolute;
+      background: rgba(255,255,255,0.2);
+      height: 1px;
+      top: 50%;
+      width: 9999px;
+      content: '';
+      display: block;
+    }
+
+    &:after{
+      right: 100%;
+    }
+
+    &:before{
+      left: 100%;
+    }
+  }
+}
+
+
+

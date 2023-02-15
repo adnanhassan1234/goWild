@@ -1,0 +1,46 @@
+@function shade($color, $percentage) {
+  @return mix(#000, $color, $percentage);
+}
+
+/* MYSTELKOMSEL COLOR PALLETE */
+$color-black: #001122;
+$color-white: #fff;
+$color-dark-grey: #33414e;
+$color-dark-blue: #0f2236;
+$color-blue: #0068af;
+$color-green: #1d9940;
+$color-dark-blue-2: #001a41;
+
+$color-red: #e5131d;
+$color-red-bright: #cc1706;
+$color-red-light: rgba(229, 177, 179, 0.5);
+$color-red-shade-10: shade($color-red, 10%);
+$color-red-shade-15: shade($color-red, 15%);
+$color-red-shade-20: shade($color-red, 20%);
+$color-red-shade-25: shade($color-red, 25%);
+
+$color-light-grey-0: #79838d;
+$color-light-grey-1: #f1f1f1;
+$color-light-grey-2: #9ca4ac;
+$color-light-grey-3: #dbd9d6;
+$color-light-grey-4: #9fa2a7;
+$color-light-grey-5: #d6d6d6;
+$color-light-grey-6: #cccfd3;
+$color-light-grey-7: #e5e7e9;
+$color-light-grey-8: #f0f1f2;
+$color-light-grey-9: #eaeef1;
+$color-light-grey-10: #66707a;
+$color-light-grey-11: #e8eef1;
+$color-light-grey-12: #4e5764;
+$color-light-grey-13: #eeeeee;
+$color-light-grey-14: #79838d;
+$color-light-grey-15: #99a0a7;
+$color-light-grey-1-shade-10: shade($color-light-grey-1, 10%);
+
+$color-blue-transparent: rgba(25, 49, 83, 0.8);
+$color-light-blue: rgba(79, 139, 224, 0.904);
+$color-white-fade: rgba(255, 255, 255, 0.6);
+$color-navy-blue: #0068af;
+$color-space-blue: #193153;
+
+

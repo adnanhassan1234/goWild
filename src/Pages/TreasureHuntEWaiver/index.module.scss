@@ -1,0 +1,38 @@
+.logBox {
+  height: 100%;
+  margin: 15px 0 0;
+  padding: 0 0 0 20px;
+  border-left: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.logList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+
+  li {
+    padding: 10px 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .box {
+    position: relative;
+    padding: 0;
+  }
+}
+
+.editSection {
+  form {
+    .formGroup {
+      textarea {
+        height: 500px;
+      }
+    }
+  }
+}

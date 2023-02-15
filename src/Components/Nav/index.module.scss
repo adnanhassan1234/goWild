@@ -1,0 +1,47 @@
+.navBar {
+
+  background: #2995A8;
+  width: 280px;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  left: 0;
+  padding: 50px 15px 0;
+  overflow-y: scroll;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 30px 0 0;
+
+    li {
+      display: block;
+      position: relative;
+      margin: 0 0 5px;
+
+      a {
+        display: block;
+        padding: 10px 15px 10px 50px;
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+
+        &:hover {
+          background: #82BAA7;
+        }
+
+        .iconBox {
+          width: 25px;
+          height: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 8px;
+          left: 13px;
+        }
+      }
+    }
+  }
+}

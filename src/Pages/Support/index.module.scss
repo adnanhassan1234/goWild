@@ -1,0 +1,391 @@
+.supportblock{
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+
+  &.widget-active{
+    .messageListSidebar{
+      left: 0;
+    }
+  }
+
+  .widget-opener{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    top: -65px;
+    right: 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}
+.messageListSidebar{
+  width: 300px;
+  float: left;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  background: #fff;
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: calc(100vh - 200px);
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-color: #6E31A2 transparent;
+    scrollbar-width: 4px;
+
+    li{
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 15px 15px 15px 70px;
+      min-height: 70px;
+      cursor: pointer;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+
+      &.active,
+      &:hover{
+        background: rgba(110, 49, 162, 0.1);
+      }
+    }
+
+    .userImg{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+
+      img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .description{
+      overflow: hidden;
+      font-size: 12px;
+      padding: 0 40px 0 0;
+      position: relative;
+
+      .text{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .counter{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #FF7851;
+        color: #fff;
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      time{
+        float: right;
+        padding: 0 0 0 20px;
+        position: relative;
+        margin-left: 10px;
+
+        &:before{
+          position: absolute;
+          content: "";
+          width: 4px;
+          height: 4px;
+          background: rgba(0, 0, 0, 0.2);
+          display: block;
+          top: 7px;
+          left: 6px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    h6{
+      font-size: 14px;
+      margin: 0;
+    }
+
+  }
+
+  .searchform {
+
+    .form-control{
+      border-color: transparent;
+    }
+  }
+}
+
+
+.msgPreview{
+  position: relative;
+  overflow: hidden;
+
+  .chatheader{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px;
+
+    .dropdown-toggle{
+      width: 36px;
+      height: 36px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6E31A2;
+      border-color: transparent;
+      background-color: transparent;
+
+      &:after{
+        display: none;
+      }
+    }
+
+    .dropdown-menu{
+      border: none;
+      box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.3);
+      font-size: 13px;
+
+      a{
+        display: block;
+        padding: 5px 15px;
+        text-decoration: none;
+
+        &:hover{
+          background: #E6E6F2;
+        }
+      }
+    }
+  }
+
+  .userInfo{
+    position: relative;
+    padding: 0 0 0 60px;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+
+    h6{
+      margin: 0 0 5px;
+      font-size: 15px;
+    }
+
+    .text{
+      color: rgba(0,0,0,0.4);
+    }
+
+    .userImg{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+
+      img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.mesgs{
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+
+
+  .msghistory{
+    overflow: hidden;
+    height: calc(100vh - 340px);
+    overflow-y: scroll;
+    margin: 0 0 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+
+  }
+
+  .outgoing,
+  .incoming{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .userImg{
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+    }
+
+    .description{
+      position: relative;
+      overflow: hidden;
+      max-width: 80%;
+
+
+      .time{
+        display: block;
+        font-size: 10px;
+        color: #aaa;
+        position: relative;
+        bottom: 0;
+        text-align: right;
+      }
+    }
+
+    .text{
+      padding: 12px;
+      background: #F1F3F6;
+      border-radius: 10px;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 0 5px;
+      color: #000;
+      position: relative;
+      font-size: 13px;
+
+
+    }
+  }
+
+  .incoming{
+    padding: 10px 10px 10px 40px;
+
+    .userImg{
+      left: 0;
+    }
+
+    .text{
+      padding-right: 50px;
+
+      .time{
+        right: 6px;
+      }
+    }
+  }
+
+  .outgoing{
+    padding: 10px 40px 10px 10px;
+    align-items: flex-end;
+
+    .userImg{
+      right: 0;
+    }
+
+    .text{
+      padding-right: 50px;
+      background: #FF7851;
+      color: #fff;
+
+      .time{
+        right: 6px;
+      }
+    }
+  }
+
+  .typemsg{
+    position: relative;
+    padding-left: 100px;
+
+
+    .formcontrol{
+      padding: 0 80px 0 15px;
+      height: 50px;
+      border-radius: 0 25px 25px 0;
+      border-color:  rgba(0, 0, 0, 0.05);
+      border: none;
+    }
+
+    .btngroup{
+      left: 0;
+      position: absolute;
+      top: 4px;
+      display: flex;
+      align-content: center;
+
+      .btn{
+        background: transparent;
+        color: #ccc;
+      }
+    }
+
+    .btn{
+      width: 40px;
+      height: 50px;
+      padding: 0;
+      font-size: 20px;
+      border: none;
+      line-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.btnSend{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        border-radius: 50%;
+        background: #FF7851;
+        color: #fff;
+
+      }
+    }
+  }
+}
+
+
+.inputAttach,
+.inputPicture{
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 5px;
+
+  input[type='file']{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+  }
+}
+
+.inputAttach{
+  background-image: url("../../Images/attchImg.svg");
+}
+.inputPicture{
+  background-image: url("../../Images/uploadImg.svg");
+}
+
